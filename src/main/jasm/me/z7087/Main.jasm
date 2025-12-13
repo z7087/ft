@@ -1,0 +1,20 @@
+public final class me/z7087/Main
+{
+    private static final MESSAGE java/lang/String
+    static <clinit>()V {
+        ldc "Hello, JASM!"
+        putstatic me/z7087/Main.MESSAGE java/lang/String
+        return
+    }
+
+    public static getMessage()java/lang/String {
+        getstatic me/z7087/Main.MESSAGE java/lang/String
+        areturn
+    }
+
+//    public static setMessage(java/lang/String)V {
+//        aload 0
+//        putstatic me/z7087/Main.MESSAGE java/lang/String
+//        return
+//    }
+}
