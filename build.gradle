@@ -23,11 +23,13 @@ java {
     targetCompatibility = sourceCompatibility = JavaVersion.VERSION_17
 }
 
-test {
-    useJUnitPlatform()
-}
-
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
     options.compilerArgs << '-Xlint:-options'
 }
+
+/*
+-XX:+UnlockDiagnosticVMOptions
+-XX:CompileCommand=print,me.z7087.Main::getMessage
+-XX:CompileCommand=option,me.z7087.Main::getMessage,PrintCompilation
+*/
