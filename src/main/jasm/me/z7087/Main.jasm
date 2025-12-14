@@ -12,9 +12,9 @@ public final class me/z7087/Main
         areturn
     }
 
-//    public static setMessage(java/lang/String)V {
-//        aload 0
-//        putstatic me/z7087/Main.MESSAGE java/lang/String
-//        return
-//    }
+    public static setMessage(java/lang/String)V {
+        aload 0
+        putstatic me/z7087/Main.MESSAGE java/lang/String
+        return
+    }
 }

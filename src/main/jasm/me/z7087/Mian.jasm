@@ -1,0 +1,37 @@
+public final class me/z7087/Mian
+extends java/lang/Object
+{
+    private static final INSTANCE me/z7087/Mian
+    private final MESSAGE java/lang/String
+    static <clinit>()V {
+        new me/z7087/Mian
+        dup
+        invokespecial me/z7087/Mian.<init>()V
+        putstatic me/z7087/Mian.INSTANCE me/z7087/Mian
+        return
+    }
+
+    public <init>()V {
+        aload 0
+        invokespecial java/lang/Object.<init>()V
+        aload 0
+        ldc "Hello, JASM!"
+        putfield me/z7087/Mian.MESSAGE java/lang/String
+        return
+    }
+
+    public static getMessage()java/lang/String {
+        //ldc "SSS"
+        //areturn
+        getstatic me/z7087/Mian.INSTANCE me/z7087/Mian
+        getfield me/z7087/Mian.MESSAGE java/lang/String
+        areturn
+    }
+
+    public static setMessage(java/lang/String)V {
+        getstatic me/z7087/Mian.INSTANCE me/z7087/Mian
+        aload 0
+        putfield me/z7087/Mian.MESSAGE java/lang/String
+        return
+    }
+}

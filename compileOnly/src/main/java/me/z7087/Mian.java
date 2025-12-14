@@ -1,8 +1,8 @@
 package me.z7087;
 
-public final class Main {
-    private Main() {
-        throw new AssertionError();
+public final class Mian {
+    public Mian() {
+
     }
 
     public static String getMessage() {
